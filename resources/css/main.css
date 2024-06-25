@@ -316,8 +316,9 @@ ul li {
 	display: block;
 	font-size: 45px;
 	font-style: normal;
-	letter-spacing: -3px;
+	letter-spacing: 1px;
 	font-weight: 700;
+	line-height: 100%;
 
 }
 
@@ -565,3 +566,93 @@ line-height:27px;
     font-size: 17px;
     font-weight: 700;
 }
+.create {
+	position: absolute;
+	right: 20px;
+	bottom: 1px;
+	font-size: 12px;
+	z-index: 1000; /* Asegura que el mensaje esté encima de otros elementos */
+
+}
+.create-b {
+	position: absolute;
+	right: 20px;
+	bottom: 1px;
+	font-size: 12px;
+	z-index: 1000; /* Asegura que el mensaje esté encima de otros elementos */
+	background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+	padding: 5px; /* Espacio alrededor del texto */
+	border-radius: 3px; /* Bordes redondeados */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.closebtna {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#mensaje {
+	display: none;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	bottom: 45%;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 300px;
+	align-items: center;
+	position: absolute;
+	right: 3px;
+	transition: right 5s;
+}
+.visible {
+	right: 50px;
+}
+.oculto {
+	right: -300px;
+}
+
+.image-container {
+    width: 200px; 
+    height: 110px; 
+    overflow: hidden;
+    position: absolute;
+	bottom: 34.5%;
+	left: 85.3%;
+
+}
+
+.animated-image {
+    width: 100%;
+    height: 100%;
+    animation: slide 10s forwards;
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
